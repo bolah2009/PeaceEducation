@@ -1,0 +1,7 @@
+# Ignore built files
+coverage
+build
+.expo
+.expo-shared
+web-build
+web-report

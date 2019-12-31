@@ -1,0 +1,10 @@
+# Ignore generated directories.
+.*/
+
+#  Ignore coverage directory used by tools like istanbul
+coverage
+build
+.expo
+.expo-shared
+web-build
+web-report
