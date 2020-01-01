@@ -13,8 +13,9 @@
    a. Setup Home screen with links to the following screen - `about`, - `quiz`, - `library` and - `peacebuilding sandbox` screen.
    b. Proper navigation to respective screens listed above.
 2. Milestone 2
-   a. Set up proper rendering and display to the `library` and `peacebuilding sandbox` screens
+   a. Set up rendering and display to the `library`, `about` and `peacebuilding sandbox` screens
 3. Milestone 3
-   a. Implement `quiz` logic and display and add `about` screen
+   a. Implement `quiz` logic and display
 4. Milestone 4
-   a. Add authentication for tracking quiz data on the cloud using `Firestore` API
+   a. Add quiz score storage and tracking logic.
+   b. [Optional] Add authentication for tracking quiz data on the cloud using `Firestore` API

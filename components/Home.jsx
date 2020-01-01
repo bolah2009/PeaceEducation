@@ -12,16 +12,16 @@ const library = require('../assets/library.png');
 const peace = require('../assets/peace.png');
 const quiz = require('../assets/quiz.png');
 
-const Home = () => (
+const Home = ({ navigation }) => (
   <View style={styles.container}>
     <View style={styles.heroImageContainer}>
       <Image source={heroImageSource} style={styles.heroImage} />
     </View>
     <View style={styles.menu}>
-      <MenuCard source={library} title="Library" />
-      <MenuCard source={peace} title="Peace Building" />
-      <MenuCard source={quiz} title="Quiz" />
-      <MenuCard source={about} title="About" />
+      <MenuCard navigation={navigation} source={library} path="Library" title="Library" />
+      <MenuCard navigation={navigation} source={peace} path="Peace" title="Peace Building" />
+      <MenuCard navigation={navigation} source={quiz} path="Quiz" title="Quiz" />
+      <MenuCard navigation={navigation} source={about} path="About" title="About" />
     </View>
   </View>
 );
@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignContent: 'space-around',
     flexDirection: 'row',
-    borderWidth: 1,
   },
 });
 

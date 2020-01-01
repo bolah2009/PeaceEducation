@@ -1,15 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
-const MenuCard = ({ title, source }) => (
-  <View style={styles.menuCard}>
+const MenuCard = ({ title, source, navigation, path }) => (
+  <TouchableOpacity style={styles.menuCard} onPress={() => navigation.navigate(path)}>
     <View style={styles.menuCardImageWrap}>
       <Image source={source} style={styles.menuCardImage} />
     </View>
     <View style={styles.menuCardTextWrap}>
       <Text style={styles.menuCardText}>{title}</Text>
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({
